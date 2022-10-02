@@ -1,6 +1,6 @@
 ---
-title: Nick Strayer's Resume"
-author: Nick Strayer
+title: Lamiaa ZRARA's Resume"
+author: Lamiaa ZRARA
 date: "`r Sys.Date()`"
 output:
   pagedown::html_resume:
@@ -15,6 +15,7 @@ knitr::opts_chunk$set(
   results='asis', 
   echo = FALSE
 )
+
 library(tidyverse)
 library(glue)
 
@@ -47,18 +48,17 @@ Aside
 ================================================================================
 
 
-![logo](beta_dist.png){width=100%}
+![logo](pic.png){width=100%}
 
 Contact {#contact}
 --------------------------------------------------------------------------------
 
 
 
-- <i class="fa fa-envelope"></i> nick.strayer@gmail.com
-- <i class="fa fa-twitter"></i> NicholasStrayer
-- <i class="fa fa-github"></i> github.com/nstrayer
-- <i class="fa fa-link"></i> [nickstrayer.me](http://nickstrayer.me/)
-- <i class="fa fa-phone"></i> (734) 645-0110
+- <i class="fa fa-envelope"></i> lamiaa.zrara@gmail.com
+- <i class="fa fa-github"></i> https://github.com/LamiaaZrara
+- <i class="fa fa-link"></i> https://www.linkedin.com/in/lamiaa-zrara-114655148/
+- <i class="fa fa-phone"></i> (+212) 617205470
 
 
 
@@ -68,14 +68,17 @@ Language Skills {#skills}
 
 ```{r}
 skills <- tribble(
-  ~skill,               ~level,
-  "R",                  5,
-  "Javascript (d3.js)", 4.5,
-  "Python",             4,
-  "Bash",               3.5,
-  "SQL",                3,
-  "C++",                3,
-  "AWK",                3
+  ~skill,                 ~level,
+  "R",                    5,
+  "Microsoft package",    5,
+  "Python",               3,
+  "MATLAB",               4.5,
+  "C",                    5,
+  "C++",                  4,
+  "Arena",                3,
+  "Geogebra",             4.5,
+  "Tracker",              4,
+  "Solidworks",           4
 )
 build_skill_bars(skills)
 ```
@@ -85,18 +88,19 @@ build_skill_bars(skills)
 Open Source Contributions {#open-source}
 --------------------------------------------------------------------------------
 
-All projects available at `github.com/nstrayer/<name>`
+All projects available at:
+`https://github.com/LamiaaZrara`
 
 
-- `shinysense`: R package to use sensor data in Shiny apps
-- `tuftesque`: Hugo theme (behind LiveFreeOrDichotomize.com)
-- `slid3r`: D3 add-on for fully svg slider inputs
-
+- `-Boston`
+- `-montyhall`
+- `-cpp-529-spr-2022`
+- `-LamiaaZRARA.github.io`
 
 More info {#more-info}
 --------------------------------------------------------------------------------
 
-See full CV at nickstrayer.me/cv for more complete list of positions and publications.
+See full CV at file:///C:/Users/Lamiaa%20Zrara/Downloads/LamiaaZrara_CV%20(20).pdf for more complete list of Work History and Educational background.
 
 
 Disclaimer {#disclaimer}
@@ -114,15 +118,12 @@ Last updated on `r Sys.Date()`.
 Main
 ================================================================================
 
-Nick Strayer {#title}
+Lamiaa ZRARA {#title}
 --------------------------------------------------------------------------------
 
 ```{r}
-intro_text <- "I have made [visualizations viewed by hundreds of thousands of people](https://www.nytimes.com/interactive/2016/08/26/us/college-student-migration.html), [sped up query times for 25 terabytes of data by an average of 4,800 times](https://livefreeordichotomize.com/2019/06/04/using_awk_and_r_to_parse_25tb/), and built [packages for R](https://github.com/nstrayer/shinysense) that let you [do magic](http://nickstrayer.me/dataDayTexas/).
 
-Currently searching for a data science position that allows me to build tools using visualization and machine learning to help people explore and understand their data. 
-"
-
+intro_text <- "Dedicated and skilled professional seeking a Channel or Distribution Management position in a high-level professional environment. Bringing extensive knowledge of several analytical, management, sales, and decision-making tools that can confer a profound advantage to the company."
 
 cat(sanitize_links(intro_text))
 ```
@@ -142,7 +143,7 @@ Selected Positions {data-icon=suitcase}
 --------------------------------------------------------------------------------
 
 ```{r}
-position_data %>% print_section('positions')
+position_data %>% print_section('Employment')
 ```
 
 Selected Writing {data-icon=newspaper}
@@ -150,7 +151,23 @@ Selected Writing {data-icon=newspaper}
 
 
 ```{r}
-position_data %>% print_section('writings')
+position_data %>% print_section('academic_articles')
 ```
 
 
+Selected Activities {data-icon=laptop}
+--------------------------------------------------------------------------------
+
+
+```{r}
+position_data %>% print_section('Activities')
+```
+
+
+Awards and Honors {data-icon=chart-line}
+--------------------------------------------------------------------------------
+
+
+```{r}
+position_data %>% print_section('Honors_and_Awards')
+```
