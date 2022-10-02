@@ -108,7 +108,7 @@ Disclaimer {#disclaimer}
 
 Made w/ [**pagedown**](https://github.com/rstudio/pagedown). 
 
-Source code: [https://lamiaazrara.github.io/Cv].
+Source code: [https://github.com/LamiaaZrara/Cv].
 
 Last updated on `r Sys.Date()`.
 
